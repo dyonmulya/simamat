@@ -1,0 +1,49 @@
+# ############################################################ #
+#           █▀   █   █▀▄▀█   ▄▀█   █▀▄▀█   ▄▀█   ▀█▀           #
+#           ▄█   █   █░▀░█   █▀█   █░▀░█   █▀█   ░█░           #
+#           Sistem Informasi Magang Mahasiswa Timah            #
+#                                                              #
+#         (c) Dyo Wiranata Mulya <dyonmulya6@gmail.com>        #
+#                                                              #
+# For the full copyright and license information, please view  #
+# the LICENSE file that was distributed with this source code. #
+# ############################################################ #
+
+#-------------------------
+# Environment Files
+#-------------------------
+# These should never be under version control,
+# as it poses a security risk.
+.env
+.vagrant
+Vagrantfile
+
+#-------------------------
+# Temporary Files
+#-------------------------
+writable/*
+
+#-------------------------
+# Composer
+#-------------------------
+vendor/
+composer.lock
+
+#-------------------------
+# Node Package
+#-------------------------
+node_modules/
+package-lock.json
+
+#-------------------------
+# Application
+#-------------------------
+app/*
+public/*
+!public/assets/*
+!public/vendors/*
+
+#-------------------------
+# Test Files
+#-------------------------
+tests/coverage*
