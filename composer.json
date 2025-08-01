@@ -1,0 +1,77 @@
+{
+    "name": "dyonmulya/simamat",
+    "description": "Sistem Informasi Magang Mahasiswa Timah (Simamat)",
+    "version": "1.0.0",
+    "type": "project",
+    "homepage": "https://simamat.timah.com/",
+    "keywords": [
+        "magang",
+        "internship",
+        "timah",
+        "pttimahtbk",
+        "sttbandung",
+        "utb-univ",
+        "pmmb",
+        "bumn"
+    ],
+    "support": {
+        "source": "https://github.com/dyonmulya/simamat",
+        "email": "dyonmulya6@gmail.com"
+    },
+    "authors": [
+        {
+            "name": "Dyo Wiranata Mulya",
+            "role": "Developer",
+            "email": "dyonmulya6@gmail.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "ext-intl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "codeigniter4/framework": "^4.6",
+        "codeigniter4/translations": "^4.6",
+        "defuse/php-encryption": "^2.4",
+        "imagine/imagine": "^1.5",
+        "matomo/device-detector": "^6.4",
+        "melbahja/seo": "^2.1",
+        "stichoza/google-translate-php": "^5.3"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.24",
+        "mikey179/vfsstream": "^1.6",
+        "phpunit/phpunit": "^10.5.16 || ^11.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Config\\": "app/Config/"
+        },
+        "exclude-from-classmap": [
+            "**/Database/Migrations/**"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Support\\": "tests/_support"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "suggest": {
+        "ext-mysqli": "If you use MySQL",
+        "ext-oci8": "If you use Oracle Database",
+        "ext-pgsql": "If you use PostgreSQL",
+        "ext-sqlite3": "If you use SQLite3",
+        "ext-sqlsrv": "If you use SQL Server"
+    }
+}
